@@ -1,8 +1,12 @@
 "use client";
 
 import RepoInput from "./components/Repoinput";
+import DisplaySize from "./components/DisplaySize";
+import { useState } from "react";
 
 export default function Home() {
+  const [repoSize, setRepoSize] = useState<number | null>(512);
+
   const handleRepoUrlSubmit = (url: string) => {
     console.log("Repo URL submitted:", url);
     // You can now parse the repo and fetch data
@@ -13,6 +17,7 @@ export default function Home() {
         Get Github repo size
       </h1>
       <RepoInput onSubmit={handleRepoUrlSubmit} />
+      <DisplaySize sizeInKB={repoSize} />
     </main>
   );
 }
