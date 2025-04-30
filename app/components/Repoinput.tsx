@@ -33,7 +33,7 @@ export default function RepoInput({ onSubmit }: RepoInputProps) {
       </div>
       <button
         type="submit"
-        className="bg-gradient-to-r from-pink-500 to-purple-500 text-white rounded-2xl px-6 py-3 font-semibold hover:brightness-110 transition-all shadow-md mx-auto"
+        className="bg-gradient-to-r from-pink-500 to-purple-500 text-white rounded-2xl px-6 py-3 font-semibold hover:brightness-110 transition-all shadow-md mx-auto cursor-pointer"
       >
         Get Repo Size
       </button>
